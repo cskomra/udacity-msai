@@ -1,4 +1,4 @@
-from lib.agent import Agent
+from agent import Agent
 from dotenv import load_dotenv
 load_dotenv()
 
