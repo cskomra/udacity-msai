@@ -1,4 +1,4 @@
-from typing import List, Any, cast
+from typing import List, Any, Optional, cast
 from dotenv import load_dotenv
 import json
 
@@ -15,7 +15,7 @@ class Agent:
         instructions: str = "Help users with any questions",
         model: str = "gpt-4o-mini",
         temperature: float = 0.0,
-        tools: List[Any] = None
+        tools: Optional[List[Any]] = None
     ):
         """
         Initialize the agent with its configuration and tools
@@ -30,7 +30,7 @@ class Agent:
         self.model = model
         self.role = role
         self.instructions = instructions
-        self.tools = tools
+        self.tools = tools or []
         self.temperature = temperature
 
         # Load environment variables (e.g. API keys)
@@ -40,7 +40,7 @@ class Agent:
         self.llm = LLM(
             model=model,
             temperature=temperature,
-            tools=tools,
+            tools=self.tools,
         )
 
     def invoke(self, user_message: str) -> str:
