@@ -1,11 +1,8 @@
-from typing import List, Any
+from lib.agent import Agent
 from dotenv import load_dotenv
-import json
+load_dotenv()
 
-from lib.messages import UserMessage, SystemMessage, ToolMessage
-from lib.tooling import tool
-from lib.llm import LLM
-
-# uncomment (if needed)
-# load_dotenv()
-
+if __name__ == "__main__":
+    agent = Agent(role="Coding Assistant")
+    response = agent.invoke("What is Python? Be concise.")
+    print(response)
