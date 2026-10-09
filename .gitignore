@@ -1,0 +1,95 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.envrc
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE / Editor (VS Code)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# OS Generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# AI-Specific (Mirror into .cursorignore or CLAUDE.md if needed)
+*.tfstate
+*.dump
+*.sqlite
+fixtures/large/
+ai-artifacts/
+
+# Secrets and Credentials (Critical)
+*.pem
+*.key
+*.crt
+*.pfx
+*credentials*.json
+*serviceaccount*.json
+.aws/
+.gcloud/
+.ssh/
+secrets/
+*.dat
+*password*
+*.httr-oauth*
+
+# Logs and Test Noise
+*.log
+logs/
+test-results/
+coverage/
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.hypothesis/
+.mypy_cache/
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+htmlcov/
+.mypy_cache/
+.pytest_cache/
